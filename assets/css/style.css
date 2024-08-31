@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --dark-background: #34495e;
+    --hover-color: #00cd9f;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--dark-background);
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+li a {
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    font-size: 1.4rem;
+    color: var(--hover-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.page-section {
+    display: flex;
+}
+
+.card-container {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+.plant-image {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}
