@@ -8,12 +8,33 @@
     --hover-color: #00cd9f;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
     background-color: var(--dark-background);
+}
+
+main {
+    flex: 1;
+    width: 96%;
+    margin: 2rem auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--dark-background);
+    color: white;
 }
 
 h1 {
@@ -49,7 +70,7 @@ li a:hover {
 
 .page-section {
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .page-section h2 {
@@ -59,21 +80,40 @@ li a:hover {
 .card-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 3rem;
 }
 
 .card {
     display: flex;
-    flex: 1 1 25%;
+    flex: 0 1 25%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
     padding: 1rem;
-    margin: 0 1rem 1rem 1rem;
 }
 
 .plant-image {
     max-width: 250px;
+}
+
+.modal {
+    display: none;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-background);
+    color: white;
+    padding: 1rem;
+}
+
+.close {
+    align-self: flex-end;
+    padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
